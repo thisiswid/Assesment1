@@ -12,4 +12,17 @@ function checkStock() {
         alert("Masukkan jumlah buku yang valid!");
         return;
     }
+
+    let bukuDitemukan = false;
+    for (let i = 0; i < buku.length; i++) {
+        if (buku[i].nama === selectedBuku) {
+            bukuDitemukan = true;
+            if (inputJumlah > buku[i].jumlah) {
+                alert("Jumlah buku tidak tersedia.");
+            } else {
+                alert("Silahkan ambil buku Anda.");
+            }
+            break;
+        }
+    }
 }
