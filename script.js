@@ -25,4 +25,8 @@ function checkStock() {
             break;
         }
     }
+
+    if (!bukuDitemukan) {
+        alert("Buku tidak ditemukan.");
+    }
 }
