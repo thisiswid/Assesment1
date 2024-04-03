@@ -8,5 +8,8 @@ function checkStock() {
     let inputJumlah = parseInt(document.getElementById('jumlah').value);
     let selectedBuku = document.getElementById('buku').value;
 
-    
+    if (isNaN(inputJumlah) || inputJumlah <= 0) {
+        alert("Masukkan jumlah buku yang valid!");
+        return;
+    }
 }
